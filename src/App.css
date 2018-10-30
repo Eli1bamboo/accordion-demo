@@ -1,32 +1,44 @@
+html,
+body,
+#root {
+	min-height: 100%;
+	height: 100%;
+}
+
 .App {
-  text-align: center;
+	background: #e2e8dd;
+	min-height: 100%;
+	height: 100%;
+	padding: 15px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.Accordion {
+	width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.AccordionItem {
+	margin: 1px 0;
+	display: block;
+	padding: 12px;
+	border: 1px solid #aac0aa;
+	background: white;
 }
 
-.App-link {
-  color: #61dafb;
+.AccordionItem .AccordionItemHeader {
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+	color: #4e5340;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AccordionItem .AccordionItemHeader span {
+	font-weight: bold;
+	color: #e9806e;
+}
+
+.AccordionItem .AccordionItemContent {
+	padding-top: 25px;
+	font-size: 14px;
 }
